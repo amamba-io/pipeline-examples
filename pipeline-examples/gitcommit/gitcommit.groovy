@@ -3,3 +3,4 @@
 // must be available.
 // Most typical, if you're not cloning into a sub directory
 shortCommit = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
+branch = ssh(returnStdout: true, script: "git branch --show-current").trim()
